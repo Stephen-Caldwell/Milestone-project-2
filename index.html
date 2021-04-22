@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Simple Map</title>
+    <title>What to do!</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootswatch.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
+
+    <header class="navbar navbar-expand-lg navbar-dark bg-success">
+        <p class="navbar-brand">What can you do</p>
+    </header>
+
+    <div id="search-box">
+
+    </div>
     <div id="map"></div>
     <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 53.1424, lng: -7.6921},
-          zoom: 7
+          center: {lat: 53.3, lng: -7.75},
+          zoom: 6.75
         });
       }
     </script>
