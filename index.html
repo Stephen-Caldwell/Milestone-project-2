@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Places Search Box</title>
+    <title>Place Search Pagination</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="js/googlemapapi.js"></script>
   </head>
   <body>
-    <input
+    <div id="container">
+        <input
       id="pac-input"
       class="controls"
       type="text"
       placeholder="Search Box"
     />
-    <div id="map"></div>
+      <div id="map"></div>
+      <div id="sidebar">
+        <h2>Results</h2>
+        <ul id="places"></ul>
+        <button id="more">Load more results</button>
+      </div>
+    </div>
 
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0lOcIU4ZlIA5NyVaj19fapaCIwUM-qZI&region=IE&callback=initAutocomplete&libraries=places&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0S1TpskPY8lX8n7hpj7DtysNGP6rbM6g&callback=initMap&libraries=places&v=weekly&map_ids=8d193001f940fde3"
       async
     ></script>
   </body>
