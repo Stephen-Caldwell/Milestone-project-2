@@ -6,7 +6,7 @@
 // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -33.8688, lng: 151.2195 },
+    center: { lat: 53.3498, lng: -6.2603},
     zoom: 13,
     mapTypeId: "roadmap",
   });
@@ -23,7 +23,7 @@ function initMap() {
   // more details for that place.
   searchBox.addListener("places_changed", () => {
     const places = searchBox.getPlaces();
-
+    
     if (places.length == 0) {
       return;
     }
@@ -66,6 +66,7 @@ function initMap() {
     map.fitBounds(bounds);
   });
 
+  var pyrmont = places.geometry.location;
   // Create the places service.
   const service = new google.maps.places.PlacesService(map);
   let getNextPage;
@@ -80,7 +81,7 @@ function initMap() {
   };
   // Perform a nearby search.
   service.nearbySearch(
-    { location: input, radius: 5000, type: "store, points_of_interest" },
+    { location: pyrmont, radius: 5000, type: "store, points_of_interest" },
     (results, status, pagination) => {
       if (status !== "OK" || !results) return;
       addPlaces(results, map);
