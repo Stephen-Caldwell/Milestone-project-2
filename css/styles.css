@@ -1,3 +1,9 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 100%;
+}
+
 /* Optional: Makes the sample page fill the window. */
 html,
 body {
@@ -6,149 +12,100 @@ body {
   padding: 0;
 }
 
-#container {
-  height: 100%;
-  display: flex;
+body {
+  padding: 0 !important;
 }
 
-#sidebar {
-  flex-basis: 5rem;
-  flex-grow: 1;
-  padding: 1rem;
-  max-width: 30rem;
-  height: 100%;
-  box-sizing: border-box;
+table {
+  font-size: 12px;
+}
+
+.hotel-search {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 440px;
+  z-index: 1;
 }
 
 #map {
-  flex-basis: 0;
-  flex-grow: 4;
-  height: 100%;
+  margin-top: 40px;
+  width: 80%;
 }
 
-#sidebar {
-  display: flex;
-  flex-direction: column;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin: 0 0 5px 0;
-  flex-grow: 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  overflow-y: scroll;
-  flex-grow: 1;
-}
-
-li {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 1.25rem;
+#listing {
+  position: absolute;
+  width: 200px;
+  height: 470px;
+  overflow: auto;
+  left: 442px;
+  top: 0px;
   cursor: pointer;
+  overflow-x: hidden;
 }
 
-li:nth-child(odd) {
-  background-color: #fcfcfc;
+#findhotels {
+  font-size: 14px;
 }
 
-button {
+#locationField {
+  -webkit-box-flex: 1 1 190px;
+  -ms-flex: 1 1 190px;
+  flex: 1 1 190px;
+  margin: 0 8px;
+}
+
+#controls {
+  -webkit-box-flex: 1 1 140px;
+  -ms-flex: 1 1 140px;
+  flex: 1 1 140px;
+}
+
+#autocomplete {
   width: 100%;
-  padding: 1rem;
-  flex-grow: 0;
-  cursor: pointer;
-  background: #1a73e8;
-  font-size: 1.5rem;
-  color: white;
-  border: none;
 }
 
-button:hover {
-  color: #c5d4f0;
+#country {
+  width: 100%;
 }
 
-button:disabled {
-  background-color: #9fc1ee;
-  color: #c5d4f0;
-  cursor: auto;
+.placeIcon {
+  width: 20px;
+  height: 34px;
+  margin: 4px;
 }
 
-#description {
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 300;
+.hotelIcon {
+  width: 24px;
+  height: 24px;
 }
 
-#infowindow-content .title {
-  font-weight: bold;
+#resultsTable {
+  border-collapse: collapse;
+  width: 240px;
 }
 
-#infowindow-content {
-  display: none;
-}
-
-#map #infowindow-content {
-  display: inline;
-}
-
-.pac-card {
-  margin: 10px 10px 0 0;
-  border-radius: 2px 0 0 2px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  outline: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  background-color: #fff;
-  font-family: Roboto;
-}
-
-#pac-container {
-  padding-bottom: 12px;
-  margin-right: 12px;
-}
-
-.pac-controls {
-  display: inline-block;
-  padding: 5px 11px;
-}
-
-.pac-controls label {
-  font-family: Roboto;
+#rating {
   font-size: 13px;
-  font-weight: 300;
+  font-family: Arial Unicode MS;
 }
 
-#pac-input {
-  background-color: #fff;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 300;
-  margin-left: 12px;
-  padding: 0 11px 0 13px;
-  text-overflow: ellipsis;
-  width: 400px;
+.iw_table_row {
+  height: 18px;
 }
 
-#pac-input:focus {
-  border-color: #4d90fe;
+.iw_attribute_name {
+  font-weight: bold;
+  text-align: right;
 }
 
-#title {
-  color: #fff;
-  background-color: #4d90fe;
-  font-size: 25px;
-  font-weight: 500;
-  padding: 6px 12px;
-}
-
-#target {
-  width: 345px;
+.iw_table_icon {
+  text-align: right;
 }
