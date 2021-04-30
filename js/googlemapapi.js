@@ -12,9 +12,9 @@ const countries = {
     center: { lat: -25.3, lng: 133.8 },
     zoom: 4,
   },
-  br: {
-    center: { lat: -14.2, lng: -51.9 },
-    zoom: 3,
+  ie: {
+    center: { lat: 53.14, lng: -7.69 },
+    zoom: 6.5,
   },
   ca: {
     center: { lat: 62, lng: -110.0 },
@@ -64,8 +64,8 @@ const countries = {
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: countries["us"].zoom,
-    center: countries["us"].center,
+    zoom: countries["ie"].zoom,
+    center: countries["ie"].center,
     mapTypeControl: false,
     panControl: false,
     zoomControl: false,
@@ -80,7 +80,6 @@ function initMap() {
     document.getElementById("autocomplete"),
     {
       types: ["(cities)"],
-      componentRestrictions: countryRestrict,
     }
   );
   places = new google.maps.places.PlacesService(map);
