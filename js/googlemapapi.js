@@ -79,7 +79,7 @@ function initMap() {
   autocomplete = new google.maps.places.Autocomplete(
     document.getElementById("autocomplete"),
     {
-      types: ["(cities)"],
+      types: ["(regions)"],
     }
   );
   places = new google.maps.places.PlacesService(map);
