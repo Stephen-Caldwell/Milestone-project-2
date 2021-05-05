@@ -37,11 +37,28 @@
 
     <div id="map"></div>
 
+    
+
     <div id="listing" style="margin-left: 570px; margin-top: 40px;">
       <table id="resultsTable">
         <tbody id="results"></tbody>
       </table>
     </div>
+
+    <div class="center">
+<script>
+  (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      js = d.createElement(s); js.id = id;
+      js.src = "https://widgets.moovit.com/wtp/en";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'moovit-jsw'));
+</script>
+<div class="mv-wtp"
+   data-metro="121"
+   data-lang="en" style="height: 750x;">
+</div> 
+</div>
 
     <div style="display: none">
       <div id="info-content">
@@ -72,7 +89,7 @@
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0S1TpskPY8lX8n7hpj7DtysNGP6rbM6g&callback=initMap&libraries=places&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgRqb-nvG7UTuWTzIVEuoRN6fSY6-fp_k&callback=initMap&libraries=places&v=weekly"
       async
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
