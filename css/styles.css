@@ -1,9 +1,8 @@
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 #map {
   height: 100%;  
-  margin-top: 40px;
-  width: 45%;
+  margin: 70px 0px 40px 100px;
+  width: 75%;
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -12,6 +11,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Comfortaa', cursive;
 }
 
 body {
@@ -35,6 +35,7 @@ table {
   top: 0;
   width: 440px;
   z-index: 1;
+  margin: 75px 20px;
 }
 
 #listing {
@@ -42,9 +43,11 @@ table {
   width: 200px;
   height: 470px;
   overflow: auto;
-  top: 0px;
+  top: 70px;
   cursor: pointer;
-  overflow-x: hidden;
+  overflow-x: hidden;  
+  left: 480px
+
 }
 
 #findhotels {
@@ -104,4 +107,10 @@ table {
 
 .iw_table_icon {
   text-align: right;
+}
+
+.mv-wtp{
+    height: 500px;  
+    margin: 40px 0px 40px 100px;
+    width: 75%;
 }
