@@ -74,8 +74,6 @@ function initMap() {
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById("info-content"),
   });
-  // Create the autocomplete object and associate it with the UI input control.
-  // Restrict the search to the default country, and to place type "cities".
   autocomplete = new google.maps.places.Autocomplete(
     document.getElementById("autocomplete"),
     {
@@ -84,14 +82,11 @@ function initMap() {
   );
   places = new google.maps.places.PlacesService(map);
   autocomplete.addListener("place_changed", onPlaceChanged);
-  // Add a DOM event listener to react when the user selects a country.
   document
     .getElementById("country")
     .addEventListener("change", setAutocompleteCountry);
 }
 
-// When the user selects a city, get the place details for the city and
-// zoom the map in on the city.
 function onPlaceChanged() {
   const place = autocomplete.getPlace();
 
@@ -107,19 +102,15 @@ function onPlaceChanged() {
 function search() {
   const search = {
     bounds: map.getBounds(),
-    types: ["tourist_attraction, lodging"],
+    types: ["tourist_attraction"],
   };
   places.nearbySearch(search, (results, status, pagination) => {
     if (status === google.maps.places.PlacesServiceStatus.OK && results) {
       clearResults();
       clearMarkers();
-
-      // Create a marker for each hotel found, and
-      // assign a letter of the alphabetic to each marker icon.
       for (let i = 0; i < results.length; i++) {
         const markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 50));
         const markerIcon = MARKER_PATH + markerLetter + ".png";
-        // Use marker animation to drop the icons incrementally on the map.
         markers[i] = new google.maps.Marker({
           position: results[i].geometry.location,
           animation: google.maps.Animation.DROP,
@@ -217,7 +208,6 @@ function showInfoWindow() {
   );
 }
 
-// Load the place information into the HTML elements used by the info window.
 function buildIWContent(place) {
   document.getElementById("iw-icon").innerHTML =
     '<img class="hotelIcon" ' + 'src="' + place.icon + '"/>';
@@ -233,9 +223,6 @@ function buildIWContent(place) {
     document.getElementById("iw-phone-row").style.display = "none";
   }
 
-  // Assign a five-star rating to the hotel, using a black star ('&#10029;')
-  // to indicate the rating the hotel has earned, and a white star ('&#10025;')
-  // for the rating points not achieved.
   if (place.rating) {
     let ratingHtml = "";
 
@@ -252,8 +239,6 @@ function buildIWContent(place) {
     document.getElementById("iw-rating-row").style.display = "none";
   }
 
-  // The regexp isolates the first part of the URL (domain plus subdomain)
-  // to give a short URL for displaying in the info window.
   if (place.website) {
     let fullUrl = place.website;
     let website = String(hostnameRegexp.exec(place.website));

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 #map {
   height: 100%;  
-  margin: 70px 0px 40px 150px;
-  width: 75%;
+  margin: 70px 0 0 150px;
+  width: 50%;
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -41,18 +41,24 @@ table {
 }
 
 #listing {
-  font-family: 'Comfortaa', cursive;
-  position: absolute;
-  width: 200px;
-  height: 470px;
-  overflow: auto;
-  top: 80px;
-  cursor: pointer;
-  overflow-x: hidden;  
-  left: 480px
-
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    width: 400px;
+    height: 620px;
+    overflow: auto;
+    top: 0;
+    cursor: pointer;
+    overflow-x: hidden;  
+    left: 0;
+    margin: 120px 0 0 790px;
 }
-
+#controls {
+  font-family: 'Comfortaa', cursive;
+  -webkit-box-flex: 1 1 140px;
+  -ms-flex: 1 1 140px;
+  flex: 1 1 140px;
+  display: none;
+}
 #findhotels {
   font-family: 'Comfortaa', cursive;
   font-size: 14px;
@@ -64,13 +70,6 @@ table {
   -ms-flex: 1 1 190px;
   flex: 1 1 190px;
   margin: 0 8px;
-}
-
-#controls {
-  font-family: 'Comfortaa', cursive;
-  -webkit-box-flex: 1 1 140px;
-  -ms-flex: 1 1 140px;
-  flex: 1 1 140px;
 }
 
 #autocomplete {
@@ -97,12 +96,12 @@ table {
 #resultsTable {
   font-family: 'Comfortaa', cursive;
   border-collapse: collapse;
-  width: 240px;
+  width: 400px;
 }
 
 #rating {
   font-size: 13px;
-  font-family: Arial Unicode MS;
+  font-family: 'Comfortaa', cursive;
 }
 
 .iw_table_row {
@@ -119,8 +118,8 @@ table {
 }
 
 .mv-wtp{
-    height: 500px;  
-    margin: 40px 0px 50px 150px;
+    height: 600px;  
+    margin: 0 0 50px 150px;
     width: 75%;
 }
 
@@ -129,6 +128,7 @@ nav{
     letter-spacing: 2px;
     font-size: 150%;
     font-weight: 600;
+    background-color: #00B74A;
 }
 
 #title{
@@ -139,6 +139,12 @@ nav{
 #transit-header{
     text-align: center;
     letter-spacing: 2px;
+    background-color: #00B74A;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    padding: 30px;
 }
 
 footer{
@@ -147,6 +153,6 @@ footer{
     font-family: 'Comfortaa', cursive;
     font-size: smaller;
     letter-spacing: 2px;
-    background-color: #5cb85c;
+    background-color: #00b74a;
     color: #fff;
 }
