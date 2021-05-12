@@ -10,3 +10,8 @@ The pins on the map are letter and they also appear on the list of attractions.
 The user can click a pin on the map or select an attraction from the list, this will open up a small popup window on the map with further information on the attraction.
 
 Please see map.PNG & Results_Map.PNG in https://github.com/Stephen-Caldwell/Milestone-project-2/tree/master/Screenshots
+
+### Transit section
+After the user has found the attractions they wish to go to they can scroll down and search for public transport routes to whereever they need to go.
+The can also see the different lines of each type of public transport, see the latest alerts, and change the country and language.
+Please see Transport Map.PNG, Transport search results.PNG, Transport lines.PNG & Transport alerts.PNG in https://github.com/Stephen-Caldwell/Milestone-project-2/tree/master/Screenshots
