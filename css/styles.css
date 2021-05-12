@@ -139,7 +139,7 @@ nav{
     width:100%;
 }
 
-#c{
+#transit-header{
     text-align: center;
     letter-spacing: 2px;
     background-color: #00B74A;
@@ -158,11 +158,4 @@ footer{
     letter-spacing: 2px;
     background-color: #00b74a;
     color: #fff;
-}
-
-@media screen and (max-width:943px){
-   #map {
-        height: 75%;  
-        width:75%;
-    }
 }
