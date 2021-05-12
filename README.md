@@ -8,3 +8,5 @@ The user will simply enter a city of their choice suggestions for which city wil
 When the user selects the city pins will populate the map and a list will appear on the right hand side.
 The pins on the map are letter and they also appear on the list of attractions.
 The user can click a pin on the map or select an attraction from the list, this will open up a small popup window on the map with further information on the attraction.
+
+Please see map.PNG & Results_Map.PNG in https://github.com/Stephen-Caldwell/Milestone-project-2/tree/master/Screenshots
