@@ -1,5 +1,5 @@
 ## What to do, what to do?
-This is a simple website that llows users to search for some attractions in the city of their choice. The results are listed and displayed on a map. Users can then search for directions using public transport withing the city tey are going to.
+This is a simple website that llows users to search for some attractions in the city of their choice. The results are listed and displayed on a map. Users can then search for directions using public transport withing the city tey are going to. The site is deloyed on https://stephen-caldwell.github.io/Milestone-project-2/
 
 ## Site Flow
 The site is split into 2 sections at the top is the map and search for the attractions.
@@ -47,3 +47,10 @@ The results below are from manual testing.
     3. The route will also appear on a map
     4. Map also includes links to download the app to your phone and send the route to your phone.
 
+## Credits
+- In the googlemapsapi.js file I used the code found on the Google Place AUtocomplete Hotel search. I then adapted it to suit my idea of the project.(https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
+    -   I centred on Ireland.
+    -   I removed the country list and country restrictions to allow more freedon of selection.
+    -   I changed the autocomplete type from cities to regions to allow for more specific searches.
+- I also added the Moovit API Embedded widget.(https://moovit.com/developers/embedded/)
+- I used a project done by James Ahorne as a guide to improve on aspects of my last project (https://github.com/jamesahorne/milestone-2).
