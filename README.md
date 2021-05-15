@@ -51,6 +51,10 @@ The results below are from manual testing.
     3. The route will also appear on a map
     4. Map also includes links to download the app to your phone and send the route to your phone.
 
+## Challenges/Issues
+Unfortunately I had a hard time making the site responsive to mobile and tablets. The map used from the Google maps API is not reposnding to the CSS added for smaller devices. I have included the wireframe for the mobile view however I was just unable to bring it to fruition, I have also included the attempted code.
+The Moovit widget is naturally responsiveand does ask the user if they would like to use the desktop version or install the app.
+
 ## Credits
 - In the googlemapsapi.js file I used the code found on the Google Place AUtocomplete Hotel search. I then adapted it to suit my idea of the project.(https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
     -   I centred on Ireland.

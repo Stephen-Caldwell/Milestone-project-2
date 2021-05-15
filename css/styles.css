@@ -161,17 +161,11 @@ footer{
     color: #fff;
 }
 
-@media screen and (max-width:943px){
+@media (max-width: 768px){
     #map{
         width: 65%;
-        height: 500px;
-        margin-left: 17.5%;
-        margin-right:17.5%;
+        height: 65%;
+        margin: 50px;
     }
-    #listing{
-        width: 95%;
-        margin-left: 2.5%;
-        margin-right:2.5%;
-        height: 100px;
-    }
+    
 }
