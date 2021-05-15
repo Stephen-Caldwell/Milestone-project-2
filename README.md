@@ -15,3 +15,20 @@ Please see map.PNG & Results_Map.PNG in https://github.com/Stephen-Caldwell/Mile
 After the user has found the attractions they wish to go to they can scroll down and search for public transport routes to whereever they need to go.
 The can also see the different lines of each type of public transport, see the latest alerts, and change the country and language.
 Please see Transport Map.PNG, Transport search results.PNG, Transport lines.PNG & Transport alerts.PNG in https://github.com/Stephen-Caldwell/Milestone-project-2/tree/master/Screenshots
+
+### Technologies Used
+- HTML
+    - I used HTML to build the website
+- CSS
+    - I used CSS for styling
+- Bootstrap
+    - I used Bootstrap just for further styling
+- Google Fonts
+    - I used this for the font families
+- JavaScript
+    - This was used to link the autocomplete to the map, add interactivity, and to bring up the small info window when the icons were selected on the map.
+- Google maps API
+    -   I used Google maps API and Google Places API to find and display the results
+- Moovit Embedded Widget
+    - I used the Moovit API embedded widget to allow users to find public transport routes to whereever they need to go.(https://moovit.com/developers/embedded/)
+    
