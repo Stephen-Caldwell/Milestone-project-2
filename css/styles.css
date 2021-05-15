@@ -160,3 +160,18 @@ footer{
     background-color: #00b74a;
     color: #fff;
 }
+
+@media screen and (max-width:768px){
+    #map{
+        width: 65%;
+        height: 500px;
+        margin-left: 17.5%;
+        margin-right:17.5%;
+    }
+    #listing{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right:2.5%;
+        height: 100px;
+    }
+}
