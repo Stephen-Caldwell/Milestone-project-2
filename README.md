@@ -1,5 +1,5 @@
 ## What to do, what to do?
-This is a simple website that llows users to search for some attractions in the city of their choice. The results are listed and displayed on a map. Users can then search for directions using public transport withing the city tey are going to. The site is deloyed on https://stephen-caldwell.github.io/Milestone-project-2/
+This is a simple website that llows users to search for some attractions in the city of their choice. The results are listed and displayed on a map. Users can then search for directions using public transport withing the city tey are going to. 
 
 ## Site Flow
 The site is split into 2 sections at the top is the map and search for the attractions.
@@ -34,6 +34,9 @@ Please see Transport Map.PNG, Transport search results.PNG, Transport lines.PNG 
 - Moovit Embedded Widget
     - I used the Moovit API embedded widget to allow users to find public transport routes to whereever they need to go.(https://moovit.com/developers/embedded/)
 
+## Deployment
+The site is deloyed on https://stephen-caldwell.github.io/Milestone-project-2/. To deploy the site I used GitHub pages.
+To do this I went to the settings tab and found the pages option on the menu on the left hand side. I deployed from the 'master branch', which mirrors the development version of the site.
 ## Testing
 The results below are from manual testing.
 1. Autocomplete search bar 
