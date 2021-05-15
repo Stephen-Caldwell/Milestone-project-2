@@ -31,4 +31,18 @@ Please see Transport Map.PNG, Transport search results.PNG, Transport lines.PNG 
     -   I used Google maps API and Google Places API to find and display the results
 - Moovit Embedded Widget
     - I used the Moovit API embedded widget to allow users to find public transport routes to whereever they need to go.(https://moovit.com/developers/embedded/)
-    
+
+
+## Testing
+The results below are from manual testing.
+1. Autocomplete search bar 
+    a. As you type cities relating to letters will apppear in a dropdown menu for you to select.
+2. Results table & markers
+    a. When you select a city the map will zoom in on that city and lettered markers will appear on the map.
+    b. Beside the map the a corressponding list will appear listing the results with the lettered markers beside them.
+    c. When you select a result from the table or the marker on the map an info window will come up.
+3. Moovit map
+    a. Clicking the country name at the top brings up a modal to search for and select a different country on Moovit's system.
+    b. Searching for directions returns different routes, times, and modes of transport.
+    c. The route will also appear on a map
+    d. Map also includes links to download the app to your phone and send the route to your phone.
