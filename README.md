@@ -17,6 +17,8 @@ The can also see the different lines of each type of public transport, see the l
 Please see Transport Map.PNG, Transport search results.PNG, Transport lines.PNG & Transport alerts.PNG in https://github.com/Stephen-Caldwell/Milestone-project-2/tree/master/Screenshots
 
 ### Technologies Used
+- Balsamiq
+    - This was used to create the wireframe which you can see in https://github.com/Stephen-Caldwell/Milestone-project-2/tree/master/Screenshots
 - HTML
     - I used HTML to build the website
 - CSS
@@ -31,7 +33,6 @@ Please see Transport Map.PNG, Transport search results.PNG, Transport lines.PNG 
     -   I used Google maps API and Google Places API to find and display the results
 - Moovit Embedded Widget
     - I used the Moovit API embedded widget to allow users to find public transport routes to whereever they need to go.(https://moovit.com/developers/embedded/)
-
 
 ## Testing
 The results below are from manual testing.
