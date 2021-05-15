@@ -1,7 +1,7 @@
 ## What to do, what to do?
-This is a simple website that llows users to search for some attractions in the city of their choice. The results are listed and displayed on a map. Users can then search for directions using public transport withing the city tey are going to. 
+This is a simple website that allows users to search for some attractions in the city of their choice. The results are listed and displayed on a map. Users can then search for directions using public transport withing the city tey are going to. 
 
-## Site Flow
+## UX/User Stories
 The site is split into 2 sections at the top is the map and search for the attractions.
 ### Attraction search
 The user will simply enter a city of their choice suggestions for which city will appear as the user is typing.
