@@ -31,11 +31,7 @@ function initMap() {
       types: ["(regions)"],
     }
   );
-  places = new google.maps.places.PlacesService(map);
-  autocomplete.addListener("place_changed", onPlaceChanged);
-  document
-    .getElementById("country")
-    .addEventListener("change", setAutocompleteCountry);
+  
 }
 
 function onPlaceChanged() {
