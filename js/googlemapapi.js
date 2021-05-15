@@ -122,9 +122,6 @@ function clearResults() {
     results.removeChild(results.childNodes[0]);
   }
 }
-
-// Get the place details for a hotel. Show the information in an info window,
-// anchored on the marker for the hotel that the user selected.
 function showInfoWindow() {
   const marker = this;
   places.getDetails(
